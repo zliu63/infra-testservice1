@@ -1,6 +1,6 @@
-# infra-testservice1
+# chelsydb
 
-Infrastructure code for testservice1, focusing on PostgreSQL and environment provisioning.
+Infrastructure code for chelsydb, focusing on PostgreSQL and environment provisioning.
 
 ## Structure
 - `terraform/` — infra as code (DB instance, networking, security groups)
