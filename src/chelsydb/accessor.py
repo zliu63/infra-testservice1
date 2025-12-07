@@ -20,6 +20,7 @@ def insert_data(data: str) -> int:
     with get_conn() as conn, conn.cursor() as cur:
         cur.execute("INSERT INTO testtbl1 (data) VALUES (%s) RETURNING id", (data,))
         new_id = cur.fetchone()[0]
+        conn.commit()
     return new_id
 
 

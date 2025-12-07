@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chelsydb"
+version = "0.1.0"
+description = "DB accessor for chelsydb"
+requires-python = ">=3.10"
+dependencies = [
+  "psycopg[binary]>=3.3,<3.4"
+]
